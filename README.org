@@ -1,0 +1,8 @@
+These are my experiments while learning the [[http://clojure.org][Clojure]] programming language.
+
+- This uses Leiningen from http://leiningen.org/
+
+Useful links:
+
+- A Clojure cheat sheet: [[http://clojure.org/cheatsheet]]
+
