@@ -6,3 +6,13 @@ Useful links:
 
 - A Clojure cheat sheet: [[http://clojure.org/cheatsheet]]
 
+* 01-hello-world
+
+This demonstrates how to stand up an empty new Clojure project.
+
+You can make the first project by:
+
+#+BEGIN_SRC sh
+lein new app hello-world
+mv hello-world 01-hello-world
+#+END_SRC
