@@ -6,8 +6,9 @@ Useful links:
 
 - A Clojure cheat sheet: [[http://clojure.org/cheatsheet]]
 - Clojure For The Brave and True: [[http://www.braveclojure.com]]
-- Clojure From The Ground Up [[http://aphyr.com/posts/301-clojure-from-the-ground-up-welcome]]
-- Clojure - Functional Programming for the JVM [[http://java.ociweb.com/mark/clojure/article.html]]
+- Clojure From The Ground Up: [[http://aphyr.com/posts/301-clojure-from-the-ground-up-welcome]]
+- Clojure - Functional Programming for the JVM: [[http://java.ociweb.com/mark/clojure/article.html]]
+- ClojureDocs - Community-Powered Clojure Documentation and Examples: [[http://clojuredocs.org]]
 
 * 01-hello-world
 
