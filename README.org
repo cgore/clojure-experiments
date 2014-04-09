@@ -16,3 +16,9 @@ You can make the first project by:
 lein new app hello-world
 mv hello-world 01-hello-world
 #+END_SRC
+
+The default project from Leiningen actaully is a hello world app, so just run it, you don't need to write any code.
+
+#+BEGIN_SRC sh
+lein run
+#+END_SRC
