@@ -26,3 +26,11 @@ The default project from Leiningen actaully is a hello world app, so just run it
 #+BEGIN_SRC sh
 lein run
 #+END_SRC
+
+If you want to make a .jar file of the project that you can distribute, then run the following:
+
+#+BEGIN_SRC sh
+lein uberjar
+#+END_SRC
+
+After that, there will be a file 01-hello-world/target/hello-world-0.1.0-SNAPSHOT-standalone.jar
