@@ -39,3 +39,7 @@ After that, there will be a file 01-hello-world/target/hello-world-0.1.0-SNAPSHO
 
 This demonstrates getting input from the user and doing something with it.  The
 file you are most interested in is src/user_input/core.clj
+
+* 03-gui-button
+
+We make a simple GUI using the [[https://github.com/daveray/seesaw][Seesaw]] library with just one button, a "quit" button.
