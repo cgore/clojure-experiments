@@ -47,3 +47,8 @@ We make a simple GUI using the [[https://github.com/daveray/seesaw][Seesaw]] lib
 Note that we added a dependency for Seesaw to the file project.clj.
 
 * 04-rpn-calculator
+
+This is a simple GUI RPN calculator. It is complicated enough that you might
+want to start using CIDER mode in Emacs, instead of just doing lein run over and
+over again. You can start CIDER in an open .clj file buffer by M-x
+cider-jack-in, or C-c M-j in the default setup.

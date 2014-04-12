@@ -3,9 +3,7 @@
 
 (defn -main [& args]
   (invoke-later
-   (-> (frame :title "04: RPN Calculator"
-              :content (button :text "Quit!"
-                               :listen [:action (fn [e] (System/exit 0))])
-              :on-close :exit)
-       pack!
-       show!)))
+   (let [main-frame (frame :title "04: RPN Calculator"
+                           :content (button :text "Quit!" :listen [:action (fn [e] (dispose! (all-frames)))])
+                           :on-close :exit)]
+     (-> main-frame pack! show!))))
