@@ -34,3 +34,7 @@ lein uberjar
 #+END_SRC
 
 After that, there will be a file 01-hello-world/target/hello-world-0.1.0-SNAPSHOT-standalone.jar
+
+* 02-user-input
+
+This demonstrates getting input from the user and doing something with it.
