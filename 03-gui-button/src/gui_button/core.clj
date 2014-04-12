@@ -3,8 +3,8 @@
 
 (defn -main [& args]
   (invoke-later
-   (-> (frame :title "03: GUI Button",
-              :content "GUIs are awesome",
+   (-> (frame :title "03: GUI Button"
+              :content (button :text "Quit!")
               :on-close :exit)
        pack!
        show!)))
