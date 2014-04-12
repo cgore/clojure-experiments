@@ -52,3 +52,8 @@ This is a simple GUI RPN calculator. It is complicated enough that you might
 want to start using CIDER mode in Emacs, instead of just doing lein run over and
 over again. You can start CIDER in an open .clj file buffer by M-x
 cider-jack-in, or C-c M-j in the default setup.
+
+Useful Seesaw information:
+- [[http://daveray.github.io/seesaw/index.html][Seesaw API Documentation]]
+- [[http://nathanwilliams.github.io/2013/05/15/seesaw-gui-programming-the-clojure-way/][Seesaw, GUI Programming the Clojure Way (Nathan Williams)]]
+- [[http://darevay.com/talks/clojurewest2012/#/title-slide][Building UserInterfaces with Seesaw (Dave Ray)]]
