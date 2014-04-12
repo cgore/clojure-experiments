@@ -4,10 +4,8 @@
 (defn -main [& args]
   (invoke-later
    (-> (frame :title "03: GUI Button"
-              :content (let [quit-button (button :text "Quit!")]
-                         (listen quit-button
-                                 :action (fn [e] (println "No!")))
-                         quit-button)
+              :content (button :text "Quit!"
+                               :listen [:action (fn [e] (println "No!"))])
               :on-close :exit)
        pack!
        show!)))
