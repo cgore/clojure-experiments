@@ -45,3 +45,5 @@ file you are most interested in is src/user_input/core.clj
 We make a simple GUI using the [[https://github.com/daveray/seesaw][Seesaw]] library with just one button, a "quit" button.
 
 Note that we added a dependency for Seesaw to the file project.clj.
+
+* 04-rpn-calculator
