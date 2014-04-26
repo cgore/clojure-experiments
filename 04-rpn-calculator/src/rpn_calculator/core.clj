@@ -1,30 +1,48 @@
 (ns rpn-calculator.core
   (:use seesaw.core))
 
-(def actions {:decimal  {:button-text "."}
-              :0        {:button-text "0"}
-              :1        {:button-text "1"}  
-              :2        {:button-text "2"}
-              :3        {:button-text "3"}
-              :4        {:button-text "4"}
-              :5        {:button-text "5"}
-              :6        {:button-text "6"}
-              :7        {:button-text "7"}
-              :8        {:button-text "8"}
-              :9        {:button-text "9"}
-              :+        {:button-text "+"}
-              :-        {:button-text "-"}
-              :*        {:button-text "*"}
-              :division {:button-text "/"}
-              :quit     {:button-text "Quit"}
-              :space    {:button-text "SPC"}})
+(def actions {:decimal  {:text "."
+                         :action (fn [e])}
+              :0        {:text "0"
+                         :action (fn [e])}
+              :1        {:text "1"
+                         :action (fn [e])}
+              :2        {:text "2"
+                         :action (fn [e])}
+              :3        {:text "3"
+                         :action (fn [e])}
+              :4        {:text "4"
+                         :action (fn [e])}
+              :5        {:text "5"
+                         :action (fn [e])}
+              :6        {:text "6"
+                         :action (fn [e])}
+              :7        {:text "7"
+                         :action (fn [e])}
+              :8        {:text "8"
+                         :action (fn [e])}
+              :9        {:text "9"
+                         :action (fn [e])}
+              :+        {:text "+"
+                         :action (fn [e])}
+              :-        {:text "-"
+                         :action (fn [e])}
+              :*        {:text "*"
+                         :action (fn [e])}
+              :division {:text "/"
+                         :action (fn [e])}
+              :quit     {:text "Quit"
+                         :action (fn [e] (dispose! (all-frames)))}
+              :space    {:text "SPC"
+                         :action (fn [e])}})
 
-(defn button-for-action [action]
-  (->> (-> actions action :button-text)
-       (button :text)))
+(defn button-for-action [action-key]
+  (let [action (action-key actions)]
+    (button :text (:text action)
+            :listen [:action (:action action)])))
 
 (defn north-controls []
-  (button :text "Quit!" :listen [:action (fn [e] (dispose! (all-frames)))]))
+  (button-for-action :quit))
 
 (defn rpn-stack-view []
   "MAIN GOES HERE")
